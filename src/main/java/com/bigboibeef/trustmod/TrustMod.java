@@ -1,5 +1,7 @@
 package com.bigboibeef.trustmod;
 
+import com.bigboibeef.trustmod.util.ModCommandRegister;
+import com.bigboibeef.trustmod.util.ModEventsRegister;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class TrustMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModCommandRegister.registerCommands();
+		ModEventsRegister.registerEvents();
 	}
 }

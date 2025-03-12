@@ -3,7 +3,7 @@
 	"package": "com.bigboibeef.trustmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ModEntityDataSaver"
 	],
 	"injectors": {
 		"defaultRequire": 1
