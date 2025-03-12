@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "trust-mod",
+	"version": "${version}",
+	"name": "trust mod",
+	"description": "Adds /trust to allow players to stop themselves from doing damage to certain other players",
+	"authors": [
+		"BIGBOIBEEF"
+	],
+	"contact": {
+		"homepage": "https://discord.gg/ZcraXbn9WX",
+		"sources": "https://github.com/bigboibeef/trust-command"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/trust-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bigboibeef.trustmod.TrustMod"
+		],
+		"fabric-datagen": [
+			"com.bigboibeef.trustmod.TrustModDataGenerator"
+		],
+		"client": [
+			"com.bigboibeef.trustmod.TrustModClient"
+		]
+	},
+	"mixins": [
+		"trust-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
