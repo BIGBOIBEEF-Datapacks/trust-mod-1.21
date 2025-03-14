@@ -164,7 +164,7 @@ public class TrustCommand {
         if (sender instanceof IEntityDataSaver) {
             IEntityDataSaver dataSaver = (IEntityDataSaver) sender;
             NbtCompound persistentData = dataSaver.getPersistentData();
-            NbtList trustList;
+            NbtList trustList;/////////////////////////////trustList = persistentData.getList("trustedPlayers", 8);
             if (persistentData.contains("trustedPlayers", 9)) {
                 trustList = persistentData.getList("trustedPlayers", 8);
             } else {
